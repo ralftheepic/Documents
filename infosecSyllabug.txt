@@ -1,0 +1,176 @@
+syllabus infosec
+
+Linux for Testing
+	The Linux Filesystem
+	Basic Linux Commands
+	Finding Files in Linux
+	Managing Linux Services
+	Searching, Installing, and Removing Tools
+	The Bash Environment
+	Piping and Redirection
+	Text Searching and Manipulation
+	Background Processes (bg)
+	Jobs Control
+	Process Control
+	File and Command Monitoring
+	Downloading Files
+	Persistent Bash Customization
+Scripting for Pen-Testers
+	Introduction to Shell
+		Script Basics
+		Global Declarations
+		Variable basics
+		Escape characters
+		Basic redirection and pipe
+		Understanding Conditions
+		Understanding Loops
+		Recursion and Nested Functions
+		Function Attributes
+		The Linux Execution Environment with Scripts
+		Restricted Shells
+Introduction to Python
+What is Python?
+	Python: Favourite of Hackers
+	Data Types and variables
+	Control Flow and Data structure
+	Functions, Functional Programming and File Handling
+	Exception Handling
+	Creating Managing File and Directory Access
+	Raw Socket basics
+	Socket Programming with Python
+	Servers and Clients architecture
+	Creating Sniffers (wired and wireless)
+	Creating packet injector
+Introduction to Pen-Testing
+	Penetration Testing Benefits
+	Types of Penetration Testing
+	Penetration Testing Methodologies
+	Law & Compliance
+	Planning, Managing & Reporting
+OSINT & Analysis
+	Foundation of OSINT
+	Goals of OSINT Collection
+	Core OSINT Skills
+	Leveraging Search Engines
+	File Metadata Analysis
+	Reverse Image Searching
+	People Investigations
+	SOCMINT
+	Finding Email Addresses
+	Domain & IP Investigations
+	Dark Web OSINT
+	What is TOR?
+	OSINT for Business
+	Capture the Flag Exercises for OSINT
+Reconnaissance & Enumeration
+	Types of Information Gathering
+	Reconnaissance vs Enumeration
+	Google Search
+	Google Hacking
+	User Enumeration & Phishing
+	Forward Lookup Brute Force
+	Reverse Lookup Brute Force
+	DNS Zone Transfers
+	Port Scanning
+	Null Sessions
+	Enum4Linux
+	VRFY Script
+	Python Port
+The Exploit Framework
+	Exploring Metasploit Framework
+	Using Metasploit Auxiliary
+	Using Exploit Modules
+	Staged and Non-Staged Payloads
+	Working with Multi Handler
+	Working with Meterpreter Session
+Bypassing Security
+	Antivirus Evasion using Encoder
+	Creating the shellcode with Msfvenom
+	Bypassing Network Filters
+	Understanding and bypassing pfsense firewall
+	Bypassing IDS and IPS demo on snort
+Overflow to Attack
+	Stack Overflows Introduction
+	A Word About DEP, ASLR, and CFG
+	Replicating the Crash
+	Controlling EIP
+	Stack Overflows and ASLR Bypass
+	ASLR Introduction
+	ASLR Implementation
+	ASLR Bypass Theory
+	Windows Defender Exploit Guard and ASLR
+	Understanding SEH
+	Exploiting SEH Overflows
+	Understanding the low fragmentation heap
+	Heap Overrun/Overflow
+Advanced Windows Exploitation
+	Operating System and Programming Theory
+	Win32 APIs
+	Windows Registry
+	What are Macros?
+	Creating Dangerous Macros using Empire
+	Microsoft Office Phishing using Macros
+	Executing Shellcode in Word Memory
+	PowerShell File Transfers
+	VBA Shellcode Runner
+	PowerShell Shellcode Runner
+	Reflection Shellcode Runner in PowerShell
+	Client-Side Code Execution with Windows Script Host
+	Credential Replay Attacks
+	Credential Discovery
+	Hashing Concept
+		Pass the Hash (PTH)
+		Kerberoasting and AS-REP Roasting
+		Pass the Ticket (PTT)
+Exploiting Latest Vulnerabilities
+	FOLLINA
+	Log4j
+	Spring4Shell
+Privilege Escalation & Persistence
+	Windows Privilege Escalation
+		Understanding Windows Privileges and Integrity Levels
+		User Account Control (UAC) Bypass: fodhelper.exe Case Study
+		Insecure File Permissions: Serviio Case Study
+		Leveraging Unquoted Service Paths
+		Kernel Vulnerabilities: USBPcap Case Study
+Linux Privilege Escalation
+	Understanding Linux Privileges
+	Insecure File Permissions: Cron Case Study
+	Insecure File Permissions: /etc/passwd Case Study
+	Kernel Vulnerabilities: Case Study
+	
+The Web Attacks
+OWASP Standards
+	Broken Web Application
+	ATutor & JuiceShop
+	Web Traffic Inspection using Burpsuite
+	Atmail Mail Server Appliance: from XSS to RCE
+	Session Hijacking
+	Session Riding
+	Authentication Bypass and RCE
+	Injection Attacks
+	ATutor LMS Type Juggling Vulnerability
+	Attacking the Loose Comparison
+	Magic Hashes
+	JavaScript Injection Remote Code Execution
+	Cookie Deserialization RCE
+	Server-Side Template Injection
+	XSS and OS Command Injection
+	Advanced XSS Exploitation
+	RCE Hunting
+AWS Pen testing
+	Building and setup AWS pen testing Environment
+	Exploiting S3
+	Understanding and exploiting Lambda Services
+	Testing IAM privileges
+	Case study For Capital One Attack
+Deliverables – Report Writing
+	Defining Methodology
+	Types of Reports
+	Executive Summary
+	Detailed Reports
+	Adding Proof of Concept
+	Creating Drafts
+	Risk Rating Factors
+	Automating Reports
+	Report Writing Tools

@@ -1,0 +1,27 @@
+netstat ano The command netstat -ano lists all open ports and active connections numerically, including process ID
+route display routing table
+adduser username --- add user
+ifconfig -- display network details
+iwconfig -- display wireless network details
+ping 
+arp -a 
+cat /etc/passwd used to store password way back now it doesnt store any password it has userinfo
+cat /etc/shadow contains hash
+
+su bob
+cat /etc/passwd
+permission denied 
+
+sudo cat /etc/passwd
+bob is not in the sudoers file. This incident will be reported
+now where this incident will be reported? check the logs answer is auth.log 
+su -  - refers to root switch user -(root)
+cd /var/log/ display logs
+cat syslog | grep bob
+cat auth.log
+
+history | grep ping
+
+
+
+

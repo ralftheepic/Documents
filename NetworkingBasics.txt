@@ -1,0 +1,69 @@
+Basic of networking
+
+DNS: The Domain Name System (DNS) is a protocol that is used to translate human-readable domain names (such as www.google.com) into IP addresses that computers can understand.
+
+ARP: ARP stands for Address Resolution Protocol. It is used to convert an IP address to its corresponding physical address(i.e., MAC Address). ARP is used by the Data Link Layer to identify the MAC address of the Receiver’s machine. 
+
+RARP: RARP stands for Reverse Address Resolution Protocol. As the name suggests, it provides the IP address of the device given a physical address as input. But RARP has become obsolete since the time DHCP has come into the picture.
+
+DHCP (Dynamic Host Configuration Protocol): A protocol that automatically assigns IP addresses and network configuration settings to devices on a network.
+
+Types of Computer Networks
+There are mainly five types of Computer Networks
+
+	Personal Area Network (PAN)
+	Local Area Network (LAN)
+	Campus Area Network (CAN)
+	Metropolitan Area Network (MAN)
+	Wide Area Network (WAN)
+
+Transmission Modes in Computer Networks
+	Simplex : the communication is unidirectional, as on a one-way street. 
+	half duplex : In half-duplex mode, each station can both transmit and receive, but not at the same time.
+	full duplex : In full-duplex mode, both stations can transmit and receive simultaneously
+	           RAW DATA in first 3 layer
+Application   --------------------- | D |------------------
+									| A |
+presentation  --------------------- | T |------------------
+                                    | A |
+Session       --------------------- |   |------------------
+               if TCP then segment if UDP then datagram added in L4 Header
+Transport     -----------> L4 Header | DATA | <------------ 
+              source and destination ip address added in L3 Header
+Network       ----------->| L3-H | L4-H |DATA| <-------------- 
+               mac address added in L2 Header
+DataLink      ----------->|L2-H|L3-H|L4-H|DATA| <---------------
+
+physical      It takes frames from DataLink layer and encapsulate it aka bits
+
+
+Services Offered by Network Layer
+The services which are offered by the network layer protocol are as follows: 
+
+	Packetizing
+	Routing 
+	Forwarding
+
+
+Responsibilities of a Transport Layer
+	The Process to Process Delivery
+	End-to-End Connection between Hosts
+	Multiplexing and Demultiplexing
+	Congestion Control
+	Data integrity and Error correction
+	Flow control
+	
+
+What is C2 framework?
+Command-and-control (C2) frameworks serve as a means to remotely manage and access compromised devices. They allow for the creation of various payload types, called implants, that are dropped on victim machines by attackers, enabling them to retain access and control over the infected victim.
+
+
+In class A first bit is reserved out 32 bit so total 31 bit is remaining for address 
+
+so 2**31 will be the no of address = 2147483648
+
+no of networks that is 2**7 bit because initial 8 bit belong to network and rest 24 bits belong to host
+so 2**7 = 128 
+
+no of hosts that is 2**24 = 16777216 -2 because first address is reserved to identify network and last address is for broadcasting
+

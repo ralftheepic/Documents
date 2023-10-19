@@ -1,0 +1,105 @@
+worked in frontend testing & backend testing
+
+tools
+
+selenium 
+appium/wdio
+postman
+RestSharp/Nunit/c#
+
+api automation libraries 
+- Rest Assured 
+- Apache HttpClient
+
+
+
+how to validate schema for nested objected
+A schema is a structure, which is defined in JSON format. 
+Answer :  jsonschemaValidator in restassured we can validate schema
+
+how to traverse json
+JSONObject json = new JSONObject(output.toString());
+JSONArray result = json.getJSONArray("results");
+
+
+serialization and deserialization of json
+conversion of java objects to json aka serialization
+conversion of json to java object is known as deserialization
+
+library for serialization and deserialization
+jackson
+gson
+json-io
+Genson
+
+what is object mapper? 
+Its a class provides functionality for reading and writing json from basics pojos
+
+what are 5 imp points to consider for api automation
+- data creation unique generated , non repeated data
+- response code,response body
+- verification of data put patch put once deleted cross verify with database
+- designing of test such that first we should create a data i.e post then get patch put delete.. idea is to reuse data.
+- functional test through api for example if we do transaction through api it should visible on orders or transactions on ui
+- running multiple threads and verifying that api 
+- correlation of data
+- schema validation so we know if there are any changes in api.
+monolithic vs microservices
+
+complete service one single application - monolithic
+demerits it takes time to debug the application if there is an issue
+if something is fails complete system fails
+You must redeploy the entire application on each update.
+Impact of a change is usually not very well understood which leads to do extensive manual testing.
+Monolithic applications can also be difficult to scale when different modules have conflicting resource requirements.
+Monolithic applications has a barrier to adopting new technologies. Since changes in frameworks or languages will affect an entire application it is extremely expensive in both time and cost.	
+
+microservices - require good infrastructure
+- require more maintainance
+
+for which application monolithic approach can be use instead of microservices ????
+
+what is api gateway?
+advantage of api gateway?
+Exactly what the API gateway does will vary from one implementation to another. Some common functions include authentication, routing, rate limiting, billing, monitoring, analytics, policies, alerts, and security.
+
+status code
+200 - ok
+201 - Created
+202 - Accepted
+204 - No Content
+
+400 - Bad request
+401 - unauthorized
+402 - payment required
+403 - Forbidden
+404 - Not Found/The server cannot find the requested resource
+405 - Method not allowed
+413 - payload too large
+415 - Unsupported media types
+
+500 - Internal server error
+501 - Not implemented
+502 - Bad Gateway
+503 - Service Unavailable
+504 - Gateway Timeout
+
+Selenium disadvantages
+- otp generation on phone
+- catpcha
+- selection of image for verification
+- cannot automate desktop or mobile 
+- Limited support for image testing
+- no built in reporting facility
+- security testing
+- load testing 
+- hardware testing
+
+
+what is alert?
+alert is popup/ window 
+types of alert
+- prompt alert
+- confirmation alert
+
+

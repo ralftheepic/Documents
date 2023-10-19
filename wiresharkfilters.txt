@@ -1,0 +1,26 @@
+ http.request
+ http.request or ssl.handshake.type == 1
+ tcp.flags.syn == 1 and tcp.flags.ack == 0 && tcp.port == 80
+ http.response.code == 200
+ http.host=="www.ethereal.com” Or http.host=="URL”
+ tcp.dstport == 23
+ eth.addr == 00:a0:cc:3b:bf:fa Or eth.addr == “mac addr”
+ ip.addr==10.96.203.66 and tcp.port==80 &&!(ip.addr==10.121.1.161)
+ dns
+ dns.count.queries
+ dns.qry.name ="google.com"
+ tcp
+ udp
+ icmp
+ !tcp
+ !icmp
+ tcp and !udp 
+ Ip.src==192.168.0.10
+ Ip.src!=192.168.0.10
+ frame.len>20
+ frame.len<150
+ frame.len>=0*50
+ frame.len<=0*30
+ tcp.flags & 0x03
+ Ip.src==192.168.0.10 and tcp.flags.fin
+ Ip.src==192.168.0.10 or Ip.src==192.168.1.1

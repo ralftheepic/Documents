@@ -1,0 +1,29 @@
+sudo nmap -sS localhost
+
+sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
+ 
+sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" " -f5
+
+sudo nmap -sn -oA tnet 10.129.2.18 10.129.2.19 10.129.2.20| grep for | cut -d" " -f5 
+
+sudo nmap -sn -oA tnet 10.129.2.18-20| grep for | cut -d" " -f5
+
+sudo nmap 10.129.2.18 -sn -oA host 
+
+sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace 
+
+sudo nmap 10.129.2.18 -sn -oA host -PE --reason
+
+sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace --disable-arp-ping
+
+
+Scanning options                       Description
+
+10.129.2.0/24						   Target network range.
+-sn									   Disables port scanning.
+-oA tnet							   Stores the results in all formats starting with the name 'tnet'.
+-iL									   Performs defined scans against targets in provided 'hosts.lst' list.
+-oA host							   Stores the results in all formats starting with the name 'host'.
+-PE									   Performs the ping scan by using 'ICMP Echo requests' against the target.
+--packet-trace						   Shows all packets sent and received
+--reason					           Displays the reason for specific result.

@@ -1,0 +1,98 @@
+1)To understand your API’s performance, you’ll need to compare response times between different endpoints, and even the same endpoints invoked with different payloads.
+
+2)Passive monitoring is backwards-looking: your monitoring data can show a clear picture of past and present usage, but it doesn’t help you anticipate how your API might handle increased or different usage in the future. Passive monitoring can be low-touch (tail -f your server logs) or high-touch (custom instrumentation, observability stacks, or using APM tools like New Relic or Dynatrace).
+
+3)Active monitoring means testing your API by making actual requests on a schedule. Active monitoring is also called “synthetic monitoring” because you generate traffic just to test the API. Like passive monitoring, active monitoring is backwards-looking: your monitors will tell you how your API responded to synthetic requests at various times and alert you of errors or anomalies, but they won’t help to anticipate how the API will behave in the future under heavier load.
+
+
+4)Load testing means testing a system with many concurrent requests, to see how the load from all these requests impacts the system. Load testing is most concerned with how API performance changes or degrades as the load increases.
+
+5)Different types of load tests are meant to test your API with various traffic spike intensity and durations.
+	Baseline Load Testing/Standard Load Testing
+	spike Testing
+	Stress Testing
+	Soak or Stability Testing
+	
+
+6)Baseline Load Testing
+You might want to start with a load test simulating some reasonable baseline amount of traffic. A baseline load test should generate only a modest amount of load and doesn’t need to run very long.
+Let’s say in real life your production API receives about 20 requests per second: a baseline load test would simulate this typical amount of load as realistically as possible, so you have a baseline “blue sky” test result to compare with more aggressive tests later.
+
+	L	|
+	O	|		|		
+	A	|    | 	   |
+	D	|  | 		  |
+		| | 			 |
+		|_ _ _ _ _ _ _ _ _
+			TIME
+			
+7)Spike Testing /Short Burst
+
+A spike test simulates a traffic spike, or a short burst of heavy traffic, that is significantly higher than the amount of traffic your API normally experiences. The spike portion of a spike test is short but intense.
+
+				 |
+	L	|		| |
+	O	|	   |   |
+	A	|     |     |
+	D	|    | 		 |
+		| |||| 	      |||||||
+		|_ _ _ _ _ _ _ _ _
+				TIME
+				
+8)A stress test also means hitting the API with excessive traffic, with the goal of actually breaking it. Stress tests have maximum load intensity over a fairly short duration.
+
+The primary goal with a stress test is to determine 
+ - what happens when the API is pushed past its limit. 
+ - Does it just get progressively slower for all callers? 
+ - Does it rate limit them with an HTTP 420/429 and tell them to try again later?
+ - Does it gracefully prioritize certain critical operations over other less critical ones? 
+ - does it block all incoming requests to the point of 100% failure?
+ -  Worst of all, does it lose data or commit half-finished transactions that leave the system or your customers' data in a permanently broken state?
+
+Stress testing is a way to mitigate these disasters before they happen. You should seriously consider it, particularly for read-write APIs.
+
+	L	|		
+	O	|	   |||||||||||||||||||||||||||
+	A	|     |                           |
+	D	|     | 		                  |
+		| |||| 	                          |||||||
+		|_ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _ _ _ _ 
+				TIME
+				
+
+Soak or Stability Testing
+A soak test, or stability test, focuses less on the intensity of excess load on your API, and more on the duration of the load. Soak tests typically generate moderate traffic over a long duration.
+			
+			
+			
+	L	|		
+	O	|	   
+	A	|     | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | |
+	D	|     | 		                                                 |
+		| |||| 	                                                          |||||||
+		|_ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ __ _ __  __ _
+				TIME
+				
+Some APIs have gradual resource leaks that get worse over time. For example, your backend might leak memory by holding onto global references to objects after the requests have already been handled, or failed transactions might leave database connections open until they eventually run out. Sneaky problems like this might go unnoticed for a long time and be hard to reproduce, but a soak/stability test can detect them. The likelihood of such problems depends on your API’s architecture and technology stack, but soak testing is never a bad idea.
+
+
+Input required from team 
+
+1)How fast does the API need to perform? Under how much load?
+2)Which API endpoints and functionality are in scope for load testing?
+3)What test payloads should be sent to the endpoints?Testing your API’s performance with identical payloads is a common pitfall you’ll want to avoid, so when building your load test, try to use varying payloads
+4)All the consumers are from uk or us how we are going to simulate latency or call from around the globe?
+5)Simulation of gradually increase/rampup and decrease/rampdown calls in jmeter?
+
+
+Metrics 
+6)how much ideal throuput per sec should be?Throughput = (number of requests) / (total time).
+7)how much max no of user's does current system supports?
+8) what is current response time?
+9)Average latency/Wait time: It is the time spent by a request in a queue before getting processed.
+10)Maximum active sessions: Maximum number of sessions that may stay active at once.
+11) The available physical memory to process on a system/server.
+12) CPU utilization in processing the no of requests?
+13)Error rate It is the percentage of requests resulting in errors compared to the total number of requests.
+15)It is the percentage of passed/failed transactions against the total number of transactions.
+

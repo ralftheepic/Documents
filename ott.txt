@@ -1,0 +1,56 @@
+ Deltatre is the world's leading sports and entertainment technology provider, offering graphics, data, OTT and live broadcast solutions.
+ 
+ Two types of OTT streaming
+ - Pay To Access
+ - Free to access
+ 
+ABR stands for Adaptive Bit Rate.
+It refers to the adaptive nature of media delivery where the player requests media of different bitrates depending on the available bandwidth.
+It requires the cooperation of the encoders, packagers, CDN, players to make ABR a successful technology.
+
+The video streaming protocols we will test are taken from this list, which contains the most popular streaming protocol: HLS, Progressive Download, RTMP, MPEG-DASH. (Icecast is used mainly for audio streaming
+
+HLS - HTTP live streaming/ application layer protocol
+Progressive Download
+RTMP - real time media protocol / transport layer protocol / TCP or UDP
+MPEG-DASH
+
+
+Useful KPIs to Monitor When Load Testing
+When analyzing script results, these are the KPIs we recommend you monitor:
+
+Percentage of HTTP request errors
+Average loading time of playlist for HLS, DASH
+Average loading time of chunks for HLS, DASH
+Bitrate (throughput);
+Average loading time of starting stream
+Lag time
+
+
+Types of Testing to Overcome Video Streaming Challenges
+- Automated Testing
+	- Cross-browser & Cross-device tests.
+	- Maximize test coverage
+- Functional Testing
+- Network Testing
+- Load Testing
+- UI/UX - design, alignment, user friendly
+- Geolocation Testing
+	-Lingustic accuracy
+	- payment curriencies
+	- Geo Blocking - based on the user location, specific contents are restricted
+	- Geo targeting - based on their location contents are personalized.
+	- Geo messaging - message sent from device may contain geolocation data.
+- Security testing
+
+- subscription based testing
+- Different profile support
+- max login by single account
+- matching based on previous view
+- Search feature 
+- Ratings 
+- Download function
+- payment option
+- push notification
+
+	
