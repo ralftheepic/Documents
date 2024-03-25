@@ -1,0 +1,73 @@
+Roles and Responsibility
+
+- Understanding and analysis of requirement document
+- for creating Test plan, Test Strategy,Test Cases, Excecution
+- Coordination with different team and stakeholder
+- Framework design for api , mobile and web
+- participate in code review
+- Hiring and training new team members/fresher
+
+
+- key challenges of testing
+
+Time Constraint 
+Frequent changes in requirement
+Missing Documentation
+Stable application 
+Setting priorites for testing
+lack of skilled tester
+Lack of resource,tools and training
+
+
+if there is a customer escalation and production issue found in a friday night where most of the employees are not available, how will manage it ?
+
+Acknowledge the issue
+Reproduce it 
+Find Severity
+Immediate Mitigation plan
+Do patch release if required
+Retrospect
+Action to prevent similar bug in feature
+
+
+3 best things which you have done to improve the process
+Release Guideline
+implementation of automation framework
+documentation
+
+How will you select one tool if 2 members in your team comes with 2 different tools?
+
+- Identify requirement features
+- Evaluate commericial and non commericial tool
+- Estimate cost and benefit 
+- quick poc on both tool
+- make team understand about evaluation of fair tool 
+
+
+How do you motivate your employees in tough times
+Driving an atmosphere of postivity and focus
+communicate organization vision and goal
+appreciate for there work
+communicate weekly 1-1
+take regular feedback
+
+- How will you test customer registration web page
+  Before jumping to the answer, clarify the requirement from interviewer and then start answering 
+  
+- how many fields 
+- which api
+- which db is used 
+- which business rules for registration
+
+- How will you approach testing any user story in agile project?
+
+Understand the story
+Define high level scenarios what are you going to test
+elaborate those scenarios into test cases
+
+
+How will you overcome the challenge of having limited/inaccurate documentation for testing?
+
+- Try to find out any related document available
+- Talk to project memebers and sme's to understand the application
+- apply exploratory testing

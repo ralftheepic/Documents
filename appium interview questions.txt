@@ -12,6 +12,8 @@ flaky test
 limited support for older devices
 Complex setup
 
+Appium 2 support iOS 14 and above and Android 6 and above.
+The main difference between Appium 2 and Appium 1 is that Appium 2 uses the concept of plugins and drivers.
 
 Simulator: A simulator is used to simulate an environment with all of the software variables and configurations that will be present in the actual production environment of an application. Google android sdk
 

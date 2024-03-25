@@ -1,0 +1,47 @@
+Git workflow
+
+Git clone
+git checkout branch name
+make some changes
+git add -> it will update to stage/index from working directory
+git commit -> from stage to local repository
+git push -> from local repository to feature branch
+git merge -> feature branch to master branch
+
+
+Rebase - is used to reapply commits on a different branch
+reset - undo commits on the current branch
+revert -
+
+fetch vs pull
+
+git fetch will fetch data from master to local repository and if we want in working directory then we have to call git merge
+
+Git Pull = Git Fetch + Git Merge
+
+Git Stash - stash current working directory and stage file and then you can switch to different directory
+Git Stash apply - will apply to stash files and you start continue your work
+Git Stash drop -- drop stack files 
+
+git remote 
+
+git hard reset vs git soft
+reset a soft git reset does not revert staged or working tree files back to a previous state, while the hard git reset does.
+
+Branching strategies 
+	Feature
+	Task
+	Release
+How to identify if branch is merged to master
+
+git branch --merged
+git branch --no-merged
+
+How to remove a file from Git without removing it from file system
+
+Git reset filename
+or 
+echo filename>>.gitignore
+
+Difference between head,working tree and head
+

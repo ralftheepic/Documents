@@ -1,0 +1,16 @@
+docker 
+
+A Docker image executes code in a Docker container. You add a writable layer of core functionalities on a Docker image to create a running container.
+
+clear all container command
+docker system prune -a --volumes
+
+list all container 
+docker ps -a
+
+list running container
+docker ps
+
+list all images
+docker images
+

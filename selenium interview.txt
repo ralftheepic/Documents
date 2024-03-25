@@ -1,0 +1,37 @@
+selenium
+
+What are the different ways to refresh a browser
+	Using driver.navigate().refresh() command.
+	Using sendKeys(Keys.F5) on any textbox on the webpage.
+	By using driver.get(“URL”) on the current URL or using driver.getCurrentUrl().
+	Using driver.navigate().to(“URL”) on the current URL or driver.navigate().to(driver.getCurrentUrl());
+	
+How to delete cookies in Selenium
+	driver.manage().deleteAllCookies();
+	
+What are some expected conditions in Explicit waits
+	elementToBeClickable(WebElement element or By locator)
+	stalenessOf(WebElement element)
+	visibilityOf(WebElement element)
+	visibilityOfElementLocated(By locator)
+	invisibilityOfElementLocated(By locator)
+	attributeContains(WebElement element, String attribute, String value)
+	alertIsPresent()
+	titleContains(String title)
+	titleIs(String title)
+	textToBePresentInElementLocated(By, String)
+	
+ How to handle the HTTPS website in Selenium or how to accept the SSL untrusted connection?
+ 
+    FirefoxProfile profile = new FirefoxProfile();
+	profile.setAcceptUntrustedCertificates(true); 
+	profile.setAssumeUntrustedCertificateIssuer(false);
+	WebDriver driver = new FirefoxDriver(profile); 
+
+How to do drag and drop in Selenium
+Actions builder = new Actions(driver);
+Action dragAndDrop = builder.clickAndHold(SourceElement)
+.moveToElement(TargetElement)
+.release(TargetElement)
+.build();
+dragAndDrop.perform();
