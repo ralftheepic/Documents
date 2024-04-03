@@ -35,3 +35,21 @@ Action dragAndDrop = builder.clickAndHold(SourceElement)
 .release(TargetElement)
 .build();
 dragAndDrop.perform();
+
+Selenium disadvantages
+- otp generation on phone
+- catpcha
+- selection of image for verification
+- cannot automate desktop or mobile 
+- Limited support for image testing
+- no built in reporting facility
+- security testing
+- load testing 
+- hardware testing
+
+
+what is alert?
+alert is popup/ window 
+types of alert
+- prompt alert
+- confirmation alert
