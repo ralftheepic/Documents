@@ -1,3 +1,22 @@
+
+Feature			Selenium 2		Selenium 3		Selenium 4
+WebDriver API		Introduced		Improved		Full W3C Compliance
+Selenium RC		Supported		Deprecated		Removed
+
+Browser 	        Support	Basic 
+		       Modern Browsers		Enhanced		Full W3C Standard Browsers
+
+Mobile Testing		Basic Support
+			via Appium		Improved Integration	Continued Improvements
+
+DevTools Integration	None			None			Chrome and Edge DevTools Protocol
+
+Relative Locators	None			None			Supported
+Selenium Grid		Basic Support		Improved		New Architecture, Easier Config
+Documentation		Basic			Improved		Enhanced and Comprehensive
+Observability		Limited			Improved Logging	Native Support
+
+
 selenium
 
 What are the different ways to refresh a browser
